@@ -30,7 +30,7 @@ function Skills() {
                             
                         </div>
                         <div>
-                            <h1 className="font-big text-red slide-in-top">Technologies I know</h1>
+                            <h1 className="font-big text-red slide-in-top">Skills in my Repertoir</h1>
                             <hr></hr>
                             
 
