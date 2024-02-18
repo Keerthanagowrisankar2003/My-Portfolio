@@ -1,223 +1,90 @@
-import React, { Fragment } from 'react'
+import React, { Fragment, useState } from 'react';
 import { GrPrevious, GrNext } from 'react-icons/gr';
 import { BsLaptop } from 'react-icons/bs';
 import { AiFillGithub } from 'react-icons/ai';
+import './MyWork.css';
 
 function MyWork() {
+  const [hoveredProject, setHoveredProject] = useState(null);
+
+  const handleProjectHover = (index) => {
+    setHoveredProject(index);
+  };
+
+  const projects = [
+    {
+      title: "WeBlog",
+      images: ["../portfolio-images/Blog1.jpg", "../portfolio-images/Blog2.jpg", "../portfolio-images/Blog3.jpg"],
+      description: "The Weblog Project is a frequently updated web page used for personal commentary or business content.This site allows Bloggers to share information, opinions, and updates on various topics. The users can also view  other people's posts and also they can post their own ideas on a particular topic.It has been developed using React Js and scss for frontend and Node Js for server and MySQL for Backend.",
+      sourceLink: "https://github.com/Keerthanagowrisankar2003/Blog"
+    },
+    {
+      title: "Spese",
+      images: ["../portfolio-images/Spese1.png","../portfolio-images/Spese2.png"],
+      description: "Spese is a Expense Tracker Web application designed to help users track and manage their expenses efficiently. It allows users to categorize their expenses. The users can track the expenses on a particular category they have spent.They can also track the expense on a particular day,month and year.It has been developed using React Js and SCSS for front-end, Node Js for server and MySQL for backend",
+      sourceLink: "https://github.com/Keerthanagowrisankar2003/Expenditure-calculator"
+    },
+    {
+      title: "Event Management System",
+      images: ["../portfolio-images/Event1.jpg", "../portfolio-images/Event2.jpg", "../portfolio-images/Event3.jpg", "../portfolio-images/Event4.jpg"],
+      description: "The Event Management System is web-based project where students can gain information about the upcoming events within our college .It has been developed using React Js,CSS for front-end  and flask - a pythom framework for backend.",
+      sourceLink: "https://github.com/INIKA-N/agile-projectsL"
+    }
+  ];
+  
+
   return (
     <Fragment>
-        <div className="col p-4"> 
-            <div className="p-4 slide-in-top">
-                
-                <div className="row">
-                    <div className="col-6">
-                        <h2 className="ff-jose fw-bold ls-2">Something I've Built</h2>
-                    </div>
-                </div>
-                <hr></hr>
-                <div className="row">
-                    <div className="col-md-4 text-center my-2">
-                        
-                        <div id="carouselExampleControls1" className="carousel slide my-1" data-bs-ride="carousel">
-                            <div className="carousel-inner">
-                                <div className="carousel-item active">
-                                <img src="../portfolio-images/w-01.png" className="d-block w-100" alt="..."/>
-                                </div>
-                                <div className="carousel-item">
-                                <img src="../portfolio-images/w-02.png" className="d-block w-100" alt="..."/>
-                                </div>
-                                <div className="carousel-item">
-                                <img src="../portfolio-images/w-03.png" className="d-block w-100" alt="..."/>
-                                </div>
-                            </div>
-                            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="prev">
-                                <GrPrevious/>
-                                <span className="visually-hidden">Previous</span>
-                            </button>
-                            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1" data-bs-slide="next">
-                                <GrNext/>
-                                <span className="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                            <h5 className="ff-jose my-1">Weather App</h5>
-                            <div className="row d-flex justify-content-center">
-                                <a href="https://weather-yg.herokuapp.com/" className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-1 bg-blue rounded" target="_blank"><BsLaptop/> Watch Live</a>
-                                <a href="https://github.com/Yagnik-Gohil/Weather" className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-1 bg-blue rounded" target="_blank"><AiFillGithub/> Source Code</a>
-                            </div>
-
-                    </div>
-                    <div className="col-md-4 text-center my-2">
-                        
-                        <div id="carouselExampleControls2" className="carousel slide my-1" data-bs-ride="carousel">
-                            <div className="carousel-inner">
-                                <div className="carousel-item active">
-                                <img src="../portfolio-images/m-01.png" className="d-block w-100" alt="..."/>
-                                </div>
-                                <div className="carousel-item">
-                                <img src="../portfolio-images/m-02.png" className="d-block w-100" alt="..."/>
-                                </div>
-                                <div className="carousel-item">
-                                <img src="../portfolio-images/m-03.png" className="d-block w-100" alt="..."/>
-                                </div>
-                            </div>
-                            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
-                                <GrPrevious/>
-                                <span className="visually-hidden">Previous</span>
-                            </button>
-                            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
-                                <GrNext/>
-                                <span className="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                        <div>
-                            <h5 className="ff-jose my-1">Movie Browser</h5>
-                            <div className="row d-flex justify-content-center">
-                                <a href="https://moviehunt-react.herokuapp.com/" className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-1 bg-blue rounded" target="_blank"><BsLaptop/> Watch Live</a>
-                                <a href="https://github.com/Yagnik-Gohil/MovieHunt" className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-1 bg-blue rounded" target="_blank"><AiFillGithub/> Source Code</a>
-                            </div>
-                        </div>
-                        
-                    </div>
-                    <div className="col-md-4 text-center my-2">
-                        
-                        <div id="carouselExampleControls3" className="carousel slide my-1" data-bs-ride="carousel">
-                            <div className="carousel-inner">
-                                <div className="carousel-item active">
-                                <img src="../portfolio-images/n-01.png" className="d-block w-100" alt="..."/>
-                                </div>
-                                <div className="carousel-item">
-                                <img src="../portfolio-images/n-02.png" className="d-block w-100" alt="..."/>
-                                </div>
-                                <div className="carousel-item">
-                                <img src="../portfolio-images/n-03.png" className="d-block w-100" alt="..."/>
-                                </div>
-                                <div className="carousel-item">
-                                <img src="../portfolio-images/n-04.png" className="d-block w-100" alt="..."/>
-                                </div>
-                            </div>
-                            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
-                                <GrPrevious/>
-                                <span className="visually-hidden">Previous</span>
-                            </button>
-                            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
-                                <GrNext/>
-                                <span className="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                            <h5 className="ff-jose my-1">Notes MarketPlace</h5>
-                            <div className="row d-flex justify-content-center">
-                                <a href="https://github.com/Yagnik-Gohil/NoteMarketPlaceHTML" className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-1 bg-blue rounded" target="_blank"><AiFillGithub/> Source Code</a>
-                            </div>
-                        
-                    </div>
-                    <div className="col-md-4 text-center my-2">
-                        
-                        <div id="carouselExampleControls4" className="carousel slide my-1" data-bs-ride="carousel">
-                            <div className="carousel-inner">
-                                <div className="carousel-item active">
-                                <img src="../portfolio-images/solo-01.png" className="d-block w-100" alt="..."/>
-                                </div>
-                                <div className="carousel-item">
-                                <img src="../portfolio-images/solo-02.png" className="d-block w-100" alt="..."/>
-                                </div>
-                                <div className="carousel-item">
-                                <img src="../portfolio-images/solo-03.png" className="d-block w-100" alt="..."/>
-                                </div>
-                                <div className="carousel-item">
-                                <img src="../portfolio-images/solo-04.png" className="d-block w-100" alt="..."/>
-                                </div>
-                            </div>
-                            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="prev">
-                                <GrPrevious/>
-                                <span className="visually-hidden">Previous</span>
-                            </button>
-                            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="next">
-                                <GrNext/>
-                                <span className="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                            <h5 className="ff-jose my-1">Solo</h5>
-                            <div className="row d-flex justify-content-center">
-                                <a href="https://solo-webapp.herokuapp.com/" className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-1 bg-blue rounded" target="_blank"><BsLaptop/> Watch Live</a>
-                                <a href="https://github.com/Yagnik-Gohil/Solo" className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-1 bg-blue rounded" target="_blank"><AiFillGithub/> Source Code</a>
-                            </div>
-                        
-                    </div>
-                    <div className="col-md-4 text-center my-2">
-                        
-                        <div id="carouselExampleControls5" className="carousel slide my-1" data-bs-ride="carousel">
-                            <div className="carousel-inner">
-                                <div className="carousel-item active">
-                                <img src="../portfolio-images/resume-1.jpg" className="d-block w-100" alt="..."/>
-                                </div>
-                                <div className="carousel-item">
-                                <img src="../portfolio-images/resume-2.jpg" className="d-block w-100" alt="..."/>
-                                </div>
-                                <div className="carousel-item">
-                                <img src="../portfolio-images/resume-3.jpg" className="d-block w-100" alt="..."/>
-                                </div>
-                                <div className="carousel-item">
-                                <img src="../portfolio-images/resume-4.jpg" className="d-block w-100" alt="..."/>
-                                </div>
-                            </div>
-                            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="prev">
-                                <GrPrevious/>
-                                <span className="visually-hidden">Previous</span>
-                            </button>
-                            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="next">
-                                <GrNext/>
-                                <span className="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                            <h5 className="ff-jose my-1">Resume Builder</h5>
-                            <div className="row d-flex justify-content-center">
-                                <a href="https://resume-builder-yg.netlify.app/" className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-1 bg-blue rounded" target="_blank"><BsLaptop/> Watch Live</a>
-                                <a href="https://github.com/Yagnik-Gohil/Resume-Builder" className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-1 bg-blue rounded" target="_blank"><AiFillGithub/> Source Code</a>
-                            </div>
-                        
-                    </div>
-                    <div className="col-md-4 text-center my-2">
-                        
-                        <div id="carouselExampleControls6" className="carousel slide my-1" data-bs-ride="carousel">
-                            <div className="carousel-inner">
-                                <div className="carousel-item active">
-                                <img src="../portfolio-images/tour-01.png" className="d-block w-100" alt="..."/>
-                                </div>
-                                <div className="carousel-item">
-                                <img src="../portfolio-images/tour-02.png" className="d-block w-100" alt="..."/>
-                                </div>
-                                <div className="carousel-item">
-                                <img src="../portfolio-images/tour-03.jpg" className="d-block w-100" alt="..."/>
-                                </div>
-                                <div className="carousel-item">
-                                <img src="../portfolio-images/tour-04.jpg" className="d-block w-100" alt="..."/>
-                                </div>
-                                <div className="carousel-item">
-                                <img src="../portfolio-images/tour-05.jpg" className="d-block w-100" alt="..."/>
-                                </div>
-                            </div>
-                            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls6" data-bs-slide="prev">
-                                <GrPrevious/>
-                                <span className="visually-hidden">Previous</span>
-                            </button>
-                            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls6" data-bs-slide="next">
-                                <GrNext/>
-                                <span className="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                            <h5 className="ff-jose my-1">Natours</h5>
-                            <div className="row d-flex justify-content-center">
-                                <a href="https://natour-yg.herokuapp.com/" className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-1 bg-blue rounded" target="_blank"><BsLaptop/> Watch Live</a>
-                                <a href="https://github.com/Yagnik-Gohil/Natours" className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-1 bg-blue rounded" target="_blank"><AiFillGithub/> Source Code</a>
-                            </div>
-                        
-                    </div>
-                </div>
-                
+      <div className="col p-4">
+        <div className="p-4 slide-in-top">
+          <div className="row">
+            <div className="col-6">
+              <h2 className="ff-jose fw-bold ls-2">Something I've Built</h2>
             </div>
+          </div>
+          <hr></hr>
+          <div className="row">
+            {projects.map((project, index) => (
+              <div
+                key={index}
+                className={`col-md-4 text-center my-2 project-item ${hoveredProject === index ? 'expanded' : ''}`}
+                onMouseEnter={() => handleProjectHover(index)}
+                onMouseLeave={() => handleProjectHover(null)}
+              >
+                <div id={`carouselExampleControls${index + 1}`} className="carousel slide my-1" data-bs-ride="carousel">
+                  <div className="carousel-inner">
+                    {project.images.map((image, imageIndex) => (
+                      <div key={imageIndex} className={`carousel-item ${imageIndex === 0 ? 'active' : ''}`}>
+                        <img src={image} className="d-block w-100" alt={`Slide ${imageIndex + 1}`} />
+                      </div>
+                    ))}
+                  </div>
+                  <button className="carousel-control-prev" type="button" data-bs-target={`#carouselExampleControls${index + 1}`} data-bs-slide="prev">
+                    <GrPrevious />
+                    <span className="visually-hidden">Previous</span>
+                  </button>
+                  <button className="carousel-control-next" type="button" data-bs-target={`#carouselExampleControls${index + 1}`} data-bs-slide="next">
+                    <GrNext />
+                    <span className="visually-hidden">Next</span>
+                  </button>
+                </div>
+                <h5 className="ff-jose my-1">{project.title}</h5>
+                <div className={`project-description ${hoveredProject === index ? 'show' : ''}`}>
+                  <p>{project.description}</p>
+                </div>
+                <div className="row d-flex justify-content-center">
+                  <a href={project.sourceLink} className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-1 bg-blue rounded" target="_blank">
+                    <AiFillGithub /> Source Code
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
+      </div>
     </Fragment>
-  )
+  );
+  
 }
 
-export default MyWork
+export default MyWork;

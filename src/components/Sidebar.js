@@ -15,7 +15,7 @@ function Sidebar() {
             <div className="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark slide-in-left">
                 <div className="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
                     <Link to="/" className="d-flex align-items-center pb-1 mb-md-0 me-md-auto text-white text-decoration-none">
-                        <span className="fs-5 d-none d-sm-inline ff-jost fw-600">Yagnik</span>
+                        <span className="fs-5 d-none d-sm-inline ff-jost fw-600">Keerthana G</span>
                     </Link>
                     <ul className="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
                         <li className="nav-item">
@@ -40,7 +40,7 @@ function Sidebar() {
                         </li>
                         <li className="nav-item">
                             <NavLink to="/resume" className="nav-link align-middle px-0 text-white">
-                                <AiOutlineUnorderedList className='fs-5'/> <span className="ms-1 d-none d-sm-inline ">Resume</span>
+                                <AiOutlineUnorderedList className='fs-5'/> <span className="ms-1 d-none d-sm-inline ">Activities</span>
                             </NavLink>
                         </li>
                     </ul>
@@ -51,15 +51,21 @@ function Sidebar() {
                             <span className="d-none d-sm-inline mx-1">Contact</span>
                         </a>
                         <ul className="dropdown-menu shadow" aria-labelledby="dropdownUser1">
-                            <li><a className="dropdown-item text-black" href="mailto:gohilyagnik3@email.com" target="/blank"><MdEmail className='fs-5'/> Email</a></li>
+                            <li><a className="dropdown-item text-black" href="mailto:keerthanagowrisankar2003@gmail.com" target="/blank"><MdEmail className='fs-5'/> Email</a></li>
                             <li> <hr className="dropdown-divider"/> </li>
-                            <li><a className="dropdown-item text-black" href="https://www.linkedin.com/in/gohil-yagnik-087601189/" target="/blank"><AiFillLinkedin className='fs-5'/> LinkedIn</a></li>
+                            <li><a className="dropdown-item text-black" href="https://github.com/Keerthanagowrisankar2003" target="/blank"><AiFillGithub className='fs-5'/> Github</a></li>
                             <li> <hr className="dropdown-divider"/> </li>
-                            <li><a className="dropdown-item text-black" href="https://join.skype.com/invite/XcmpKERo7On2" target="/blank"><AiFillSkype className='fs-5'/> Skype</a></li>
+                            <li><a className="dropdown-item text-black" href="https://www.linkedin.com/in/keerthana-gowri-sankar-9664a5226/" target="/blank"><AiFillLinkedin className='fs-5'/> LinkedIn</a></li>
                             <li> <hr className="dropdown-divider"/> </li>
-                            <li><a className="dropdown-item text-black" href="https://github.com/Yagnik-Gohil" target="/blank"><AiFillGithub className='fs-5'/> Github</a></li>
-                            <li> <hr className="dropdown-divider"/> </li>
-                            <li><a className="dropdown-item text-black" href="https://yagnik-19.showwcase.com/" target="/blank"><VscAccount className='fs-5'/> Showwcase</a></li>
+                            <a
+                                className="dropdown-item text-black"
+                                 href="/path/to/your/resume.pdf"  
+                                download="Keerthana_Resume.pdf"
+                                >
+    <MdEmail className='fs-5'/> Get Resume
+  </a>
+                           
+                           
                         </ul>
                     </div>
                 </div>

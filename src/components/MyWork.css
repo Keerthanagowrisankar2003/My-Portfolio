@@ -1,0 +1,17 @@
+/* MyWork.css */
+
+.project-description {
+    display: none;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .project-item.expanded .project-description {
+    display: block;
+    opacity: 1;
+  }
+  
+  .project-item:not(.expanded):hover .project-description {
+    display: block;
+    opacity: 0.7;
+  }
+  
