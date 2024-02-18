@@ -1,6 +1,5 @@
 import React, { Fragment, useState } from 'react';
 import { GrPrevious, GrNext } from 'react-icons/gr';
-import { BsLaptop } from 'react-icons/bs';
 import { AiFillGithub } from 'react-icons/ai';
 import './MyWork.css';
 
@@ -72,11 +71,10 @@ function MyWork() {
                 <div className={`project-description ${hoveredProject === index ? 'show' : ''}`}>
                   <p>{project.description}</p>
                 </div>
-                <div className="row d-flex justify-content-center">
-                  <a href={project.sourceLink} className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-1 bg-blue rounded" target="_blank">
-                    <AiFillGithub /> Source Code
-                  </a>
-                </div>
+                <a href={project.sourceLink} className="col-sm-12 col-md-5 portfolio-link text-decoration-none text-white m-1 px-2 py-1 bg-blue rounded" target="_blank" rel="noreferrer">
+  <AiFillGithub /> Source Code
+</a>
+
               </div>
             ))}
           </div>

@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { SiCodechef, SiHackerrank, SiLeetcode } from 'react-icons/si';
+import { SiCodechef, SiLeetcode } from 'react-icons/si';
 
 function Resume() {
   return (
