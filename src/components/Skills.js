@@ -5,6 +5,7 @@ function Skills() {
     <Fragment>
         <div className="col py-3 d-flex align-items-center"> 
             <div className="container">
+                
                 <div className="row">
                     <div className="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center">
                     <div>
