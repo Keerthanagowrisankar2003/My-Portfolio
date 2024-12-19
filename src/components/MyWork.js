@@ -12,22 +12,28 @@ function MyWork() {
 
   const projects = [
     {
+      title: "Spese",
+      images: ["../portfolio-images/Spese1.png","../portfolio-images/Spese2.png"],
+      description: "Spese is an Expense Tracker web application designed to help users track and manage their expenses efficiently. It allows users to categorize their expenses and monitor spending within specific categories. Users can also track their expenses by day, month, and year. It has been developed using React.js and SCSS for the front-end, Node.js with Express.js for the server, and MySQL as the database.",
+      sourceLink: "https://github.com/Keerthanagowrisankar2003/Expenditure-calculator"
+    },
+    {
       title: "WeBlog",
       images: ["../portfolio-images/Blog1.jpg", "../portfolio-images/Blog2.jpg", "../portfolio-images/Blog3.jpg"],
-      description: "The Weblog Project is a frequently updated web page used for personal commentary or business content.This site allows Bloggers to share information, opinions, and updates on various topics. The users can also view  other people's posts and also they can post their own ideas on a particular topic.It has been developed using React Js and scss for frontend and Node Js for server and MySQL for Backend.",
+      description: "The Weblog Project is a frequently updated website designed for sharing personal commentary or business content. This platform allows bloggers to share information, opinions, and updates on various topics. Users can view other people's posts and contribute their own ideas on specific topics. It has been developed using React.js and SCSS for the front-end, with Node.js and Express.js for the back-end server, and MySQL as the database.",
       sourceLink: "https://github.com/Keerthanagowrisankar2003/Blog"
     },
     {
-      title: "Spese",
-      images: ["../portfolio-images/Spese1.png","../portfolio-images/Spese2.png"],
-      description: "Spese is a Expense Tracker Web application designed to help users track and manage their expenses efficiently. It allows users to categorize their expenses. The users can track the expenses on a particular category they have spent.They can also track the expense on a particular day,month and year.It has been developed using React Js and SCSS for front-end, Node Js for server and MySQL for backend",
-      sourceLink: "https://github.com/Keerthanagowrisankar2003/Expenditure-calculator"
+      title: "Internet Speed Test Website",
+      images: ["../portfolio-images/Internet_Speed_Test.png"],
+      description: "The Internet Speed Test Website is a web-based project where users can test their internet connection speed and view metrics like upload speed, download speed, and latency. It has been developed using React.js and SCSS for the front-end and Node.js with Express.js for the back-end.",
+      sourceLink: "https://github.com/Keerthanagowrisankar2003/Internet-Speed-Test"
     },
     {
       title: "Event Management System",
       images: ["../portfolio-images/Event1.jpg", "../portfolio-images/Event2.jpg", "../portfolio-images/Event3.jpg", "../portfolio-images/Event4.jpg"],
       description: "The Event Management System is web-based project where students can gain information about the upcoming events within our college .It has been developed using React Js,CSS for front-end  and flask - a pythom framework for backend.",
-      sourceLink: "https://github.com/INIKA-N/agile-projectsL"
+      sourceLink: "https://github.com/INIKA-N/agile-projects"
     }
   ];
   

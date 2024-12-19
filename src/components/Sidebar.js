@@ -54,11 +54,11 @@ function Sidebar() {
                             <li> <hr className="dropdown-divider"/> </li>
                             <li><a className="dropdown-item text-black" href="https://github.com/Keerthanagowrisankar2003" target="/blank"><AiFillGithub className='fs-5'/> Github</a></li>
                             <li> <hr className="dropdown-divider"/> </li>
-                            <li><a className="dropdown-item text-black" href="https://www.linkedin.com/in/keerthana-gowri-sankar-9664a5226/" target="/blank"><AiFillLinkedin className='fs-5'/> LinkedIn</a></li>
+                            <li><a className="dropdown-item text-black" href="https://www.linkedin.com/in/keerthana-gowrisankar-7b0623304/" target="/blank"><AiFillLinkedin className='fs-5'/> LinkedIn</a></li>
                             <li> <hr className="dropdown-divider"/> </li>
                             <a
                                 className="dropdown-item text-black"
-                                 href="/path/to/your/resume.pdf"  
+                                 href="/Keerthanag_Resume.pdf"  
                                 download="Keerthana_Resume.pdf"
                                 >
     <MdEmail className='fs-5'/> Get Resume

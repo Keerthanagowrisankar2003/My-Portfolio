@@ -11,7 +11,7 @@ function About() {
                 <h1 className="font-big text-red slide-in-top">About me</h1>
                 <hr></hr>
                 <p className='slide-in-bottom'>
-                Aspiring and dedicated student, who is passionate about exploring various facets of technology and full-stack development . 
+                Aspiring and dedicated individual, who is passionate about exploring various facets of technology and full-stack development . 
                  Eager to kickstart my career by contributing to innovative projects.
                 </p>
                 <p className='slide-in-bottom'>
@@ -19,7 +19,7 @@ function About() {
                   
                 </p>
                 <p className='slide-in-bottom'>
-                Currently focusing on expanding my skills with <span className="text-red ls-2">  competitive programming.</span>
+                Currently focusing on enhancing my skills with <span className="text-red ls-2">  competitive programming.</span>
                 </p>
               </div>
             </div>
